@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 28 09:26:36 2019
+# Process ID: 2869
+# Current directory: /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado
+# Command line: vivado -mode batch -source optimsoc_examples_compute_tile_nexys4ddr_0_run.tcl optimsoc_examples_compute_tile_nexys4ddr_0.xpr
+# Log file: /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/vivado.log
+# Journal file: /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/vivado.jou
+#-----------------------------------------------------------
+open_project optimsoc_examples_compute_tile_nexys4ddr_0.xpr
+source optimsoc_examples_compute_tile_nexys4ddr_0_run.tcl

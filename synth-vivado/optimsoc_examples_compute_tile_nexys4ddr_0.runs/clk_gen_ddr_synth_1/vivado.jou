@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 28 09:29:32 2019
+# Process ID: 3135
+# Current directory: /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/clk_gen_ddr_synth_1
+# Command line: vivado -log clk_gen_ddr.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_gen_ddr.tcl
+# Log file: /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/clk_gen_ddr_synth_1/clk_gen_ddr.vds
+# Journal file: /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/clk_gen_ddr_synth_1/vivado.jou
+#-----------------------------------------------------------
+source clk_gen_ddr.tcl -notrace
