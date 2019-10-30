@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="/media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.xpr">
+<Project Version="7" Minor="40" Path="/home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="9d48ce9c37f64574a716c2ee63f6cfbc"/>

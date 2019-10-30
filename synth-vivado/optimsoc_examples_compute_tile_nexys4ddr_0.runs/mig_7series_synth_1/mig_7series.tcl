@@ -25,24 +25,24 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.cache/wt [current_project]
-set_property parent.project_path /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.xpr [current_project]
+set_property webtalk.parent_dir /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.cache/wt [current_project]
+set_property parent.project_path /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.cache/ip [current_project]
+set_property ip_output_repo /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 set_property include_dirs {
-  /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/mor1kx_5.0/rtl/verilog
-  /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/optimsoc_bootrom_bootrom_0/verilog
-  /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/optimsoc_lisnoc_dma_0/rtl/dma
-  /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/optimsoc_lisnoc_dma_0/rtl
-  /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado
+  /home/lucas.andrade/bluedragon/src/mor1kx_5.0/rtl/verilog
+  /home/lucas.andrade/bluedragon/src/optimsoc_bootrom_bootrom_0/verilog
+  /home/lucas.andrade/bluedragon/src/optimsoc_lisnoc_dma_0/rtl/dma
+  /home/lucas.andrade/bluedragon/src/optimsoc_lisnoc_dma_0/rtl
+  /home/lucas.andrade/bluedragon/synth-vivado
 } [current_fileset]
 set_property generic NUM_CORES=4 [current_fileset]
-read_ip -quiet /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series.xci
-set_property used_in_implementation false [get_files -all /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series/user_design/constraints/mig_7series_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series/user_design/constraints/mig_7series.xdc]
+read_ip -quiet /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series.xci
+set_property used_in_implementation false [get_files -all /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series/user_design/constraints/mig_7series_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series/user_design/constraints/mig_7series.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -54,7 +54,7 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 set_param ips.enableIPCacheLiteLoad 1
 
-set cached_ip [config_ip_cache -export -no_bom  -dir /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1 -new_name mig_7series -ip [get_ips mig_7series]]
+set cached_ip [config_ip_cache -export -no_bom  -dir /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1 -new_name mig_7series -ip [get_ips mig_7series]]
 
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
@@ -95,32 +95,32 @@ write_checkpoint -force -noxdef mig_7series.dcp
 create_report "mig_7series_synth_1_synth_report_utilization_0" "report_utilization -file mig_7series_utilization_synth.rpt -pb mig_7series_utilization_synth.pb"
 
 if { [catch {
-  file copy -force /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series.dcp /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series.dcp
+  file copy -force /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series.dcp /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.v
+  write_verilog -force -mode synth_stub /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.vhdl
+  write_vhdl -force -mode synth_stub /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_sim_netlist.v
+  write_verilog -force -mode funcsim /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -130,47 +130,47 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series.dcp /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series.dcp
+  file copy -force /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series.dcp /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series_stub.v /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.v
+  file rename -force /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series_stub.v /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series_stub.vhdl /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.vhdl
+  file rename -force /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series_stub.vhdl /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series_sim_netlist.v /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_sim_netlist.v
+  file rename -force /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series_sim_netlist.v /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series_sim_netlist.vhdl /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_sim_netlist.vhdl
+  file rename -force /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/mig_7series_synth_1/mig_7series_sim_netlist.vhdl /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.ip_user_files/ip/mig_7series]} {
+if {[file isdir /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.ip_user_files/ip/mig_7series]} {
   catch { 
-    file copy -force /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.v /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.ip_user_files/ip/mig_7series
+    file copy -force /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.v /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.ip_user_files/ip/mig_7series
   }
 }
 
-if {[file isdir /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.ip_user_files/ip/mig_7series]} {
+if {[file isdir /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.ip_user_files/ip/mig_7series]} {
   catch { 
-    file copy -force /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.vhdl /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.ip_user_files/ip/mig_7series
+    file copy -force /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.vhdl /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.ip_user_files/ip/mig_7series
   }
 }
 file delete __synthesis_is_running__

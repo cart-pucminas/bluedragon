@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1572258347">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1572431499">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="RDI-RDI" Name="compute_tile_dm_nexys4.vdi"/>
   <File Type="BG-DRC" Name="compute_tile_dm_nexys4.drc"/>
   <File Type="BG-BGN" Name="compute_tile_dm_nexys4.bgn"/>
   <File Type="BITSTR-SYSDEF" Name="compute_tile_dm_nexys4.sysdef"/>
@@ -17,13 +16,12 @@
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="compute_tile_dm_nexys4_bus_skew_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="compute_tile_dm_nexys4_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="compute_tile_dm_nexys4_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="compute_tile_dm_nexys4.vdi"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="compute_tile_dm_nexys4_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="compute_tile_dm_nexys4_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="compute_tile_dm_nexys4_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="compute_tile_dm_nexys4_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="compute_tile_dm_nexys4_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="compute_tile_dm_nexys4_bus_skew_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="compute_tile_dm_nexys4_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW" Name="compute_tile_dm_nexys4_bus_skew_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="compute_tile_dm_nexys4_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-SIMILARITY" Name="compute_tile_dm_nexys4_incremental_reuse_routed.rpt"/>
@@ -58,16 +56,18 @@
   <File Type="PLACE-CLK" Name="compute_tile_dm_nexys4_clock_utilization_placed.rpt"/>
   <File Type="PLACE-IO" Name="compute_tile_dm_nexys4_io_placed.rpt"/>
   <File Type="PLACE-DCP" Name="compute_tile_dm_nexys4_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="compute_tile_dm_nexys4_timing_summary_pwropted.rpt"/>
   <File Type="PWROPT-DRC" Name="compute_tile_dm_nexys4_drc_pwropted.rpt"/>
   <File Type="PWROPT-DCP" Name="compute_tile_dm_nexys4_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="compute_tile_dm_nexys4_timing_summary_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="compute_tile_dm_nexys4.hwdef"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="compute_tile_dm_nexys4_methodology_drc_opted.rpt"/>
   <File Type="OPT-DRC" Name="compute_tile_dm_nexys4_drc_opted.rpt"/>
   <File Type="OPT-DCP" Name="compute_tile_dm_nexys4_opt.dcp"/>
   <File Type="INIT-TIMING" Name="compute_tile_dm_nexys4_timing_summary_init.rpt"/>
-  <File Type="PWROPT-TIMING" Name="compute_tile_dm_nexys4_timing_summary_pwropted.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="compute_tile_dm_nexys4_bus_skew_routed.rpx"/>
   <File Type="REPORTS-TCL" Name="compute_tile_dm_nexys4_reports.tcl"/>
-  <File Type="OPT-TIMING" Name="compute_tile_dm_nexys4_timing_summary_opted.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="compute_tile_dm_nexys4_bus_skew_routed.pb"/>
   <File Type="PA-TCL" Name="compute_tile_dm_nexys4.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

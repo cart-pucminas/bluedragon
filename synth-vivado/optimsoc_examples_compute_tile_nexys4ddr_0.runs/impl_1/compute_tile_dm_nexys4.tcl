@@ -65,20 +65,19 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param xicom.use_bs_reader 1
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 1
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.cache/wt [current_project]
-  set_property parent.project_path /media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.xpr [current_project]
-  set_property ip_output_repo /media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.cache/wt [current_project]
+  set_property parent.project_path /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.xpr [current_project]
+  set_property ip_output_repo /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet /media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1/compute_tile_dm_nexys4.dcp
-  read_ip -quiet /media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series.xci
-  read_ip -quiet /media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/src/wallento_boards_nexys4ddr-clk_ddr_0/ip/clk_gen_ddr/clk_gen_ddr.xci
-  read_xdc /media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/src/wallento_boards_nexys4ddr_0/data/pins.xdc
+  add_files -quiet /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1/compute_tile_dm_nexys4.dcp
+  read_ip -quiet /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series.xci
+  read_ip -quiet /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr-clk_ddr_0/ip/clk_gen_ddr/clk_gen_ddr.xci
+  read_xdc /home/lucas.andrade/bluedragon/src/wallento_boards_nexys4ddr_0/data/pins.xdc
   link_design -top compute_tile_dm_nexys4 -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

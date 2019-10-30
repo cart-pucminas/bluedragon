@@ -7,9 +7,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/media/lucas/LINUXPROG/Xilinx/SDK/2019.1/bin:/media/lucas/LINUXPROG/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/media/lucas/LINUXPROG/Xilinx/Vivado/2019.1/bin
+  PATH=/opt/xilinx/SDK/2019.1/bin:/opt/xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/opt/xilinx/Vivado/2019.1/bin
 else
-  PATH=/media/lucas/LINUXPROG/Xilinx/SDK/2019.1/bin:/media/lucas/LINUXPROG/Xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/media/lucas/LINUXPROG/Xilinx/Vivado/2019.1/bin:$PATH
+  PATH=/opt/xilinx/SDK/2019.1/bin:/opt/xilinx/Vivado/2019.1/ids_lite/ISE/bin/lin64:/opt/xilinx/Vivado/2019.1/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1'
+HD_PWD='/home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

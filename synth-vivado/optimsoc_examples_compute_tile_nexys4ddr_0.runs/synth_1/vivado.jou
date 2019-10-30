@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Oct 28 11:25:49 2019
-# Process ID: 13026
-# Current directory: /media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1
+# Start of session at: Wed Oct 30 11:31:52 2019
+# Process ID: 23172
+# Current directory: /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1
 # Command line: vivado -log compute_tile_dm_nexys4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source compute_tile_dm_nexys4.tcl
-# Log file: /media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1/compute_tile_dm_nexys4.vds
-# Journal file: /media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1/vivado.jou
+# Log file: /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1/compute_tile_dm_nexys4.vds
+# Journal file: /home/lucas.andrade/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
 source compute_tile_dm_nexys4.tcl -notrace
