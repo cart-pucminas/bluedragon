@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Mon Oct 28 11:33:06 2019
+| Date         : Wed Oct 30 10:48:31 2019
 | Host         : lucas-Inspiron-5480 running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_drc -file compute_tile_dm_nexys4_drc_opted.rpt -pb compute_tile_dm_nexys4_drc_opted.pb -rpx compute_tile_dm_nexys4_drc_opted.rpx
 | Design       : compute_tile_dm_nexys4

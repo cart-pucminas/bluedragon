@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Mon Oct 28 11:31:10 2019
+| Date         : Wed Oct 30 10:46:54 2019
 | Host         : lucas-Inspiron-5480 running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_utilization -file compute_tile_dm_nexys4_utilization_synth.rpt -pb compute_tile_dm_nexys4_utilization_synth.pb
 | Design       : compute_tile_dm_nexys4
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+-------+-------+-----------+-------+
 |          Site Type         |  Used | Fixed | Available | Util% |
 +----------------------------+-------+-------+-----------+-------+
-| Slice LUTs*                | 36627 |     0 |     63400 | 57.77 |
-|   LUT as Logic             | 36093 |     0 |     63400 | 56.93 |
+| Slice LUTs*                | 36629 |     0 |     63400 | 57.77 |
+|   LUT as Logic             | 36095 |     0 |     63400 | 56.93 |
 |   LUT as Memory            |   534 |     0 |     19000 |  2.81 |
 |     LUT as Distributed RAM |   146 |     0 |           |       |
 |     LUT as Shift Register  |   388 |     0 |           |       |
-| Slice Registers            | 50648 |     0 |    126800 | 39.94 |
-|   Register as Flip Flop    | 50648 |     0 |    126800 | 39.94 |
+| Slice Registers            | 50656 |     0 |    126800 | 39.95 |
+|   Register as Flip Flop    | 50656 |     0 |    126800 | 39.95 |
 |   Register as Latch        |     0 |     0 |    126800 |  0.00 |
 | F7 Muxes                   |  5555 |     0 |     31700 | 17.52 |
 | F8 Muxes                   |   690 |     0 |     15850 |  4.35 |
@@ -58,8 +58,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 63    |          Yes |         Set |            - |
-| 50585 |          Yes |       Reset |            - |
+| 64    |          Yes |         Set |            - |
+| 50592 |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -151,20 +151,20 @@ Table of Contents
 +----------+-------+---------------------+
 | Ref Name |  Used | Functional Category |
 +----------+-------+---------------------+
-| FDRE     | 50585 |        Flop & Latch |
-| LUT6     | 25000 |                 LUT |
+| FDRE     | 50592 |        Flop & Latch |
+| LUT6     | 25002 |                 LUT |
 | MUXF7    |  5555 |               MuxFx |
 | LUT5     |  4495 |                 LUT |
 | LUT4     |  3733 |                 LUT |
 | LUT3     |  3092 |                 LUT |
-| LUT2     |  1542 |                 LUT |
+| LUT2     |  1543 |                 LUT |
 | CARRY4   |   978 |          CarryLogic |
 | MUXF8    |   690 |               MuxFx |
 | LUT1     |   633 |                 LUT |
 | SRL16E   |   388 |  Distributed Memory |
 | RAMD32   |   156 |  Distributed Memory |
 | RAMB36E1 |    88 |        Block Memory |
-| FDSE     |    63 |        Flop & Latch |
+| FDSE     |    64 |        Flop & Latch |
 | RAMB18E1 |    16 |        Block Memory |
 | DSP48E1  |    12 |    Block Arithmetic |
 | RAMS32   |    10 |  Distributed Memory |

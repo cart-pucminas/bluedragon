@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1'
+HD_PWD='/media/lucas/LINUXPROG/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

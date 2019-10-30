@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="/media/lucas/LINUXPROG/VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.xpr">
+<Project Version="7" Minor="40" Path="/media/lucas/LINUXPROG/bluedragon/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="9d48ce9c37f64574a716c2ee63f6cfbc"/>
@@ -27,7 +27,7 @@
     <Option Name="IPCachePermission" Val="write"/>
     <Option Name="EnableCoreContainer" Val="FALSE"/>
     <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
-    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
+    <Option Name="IPUserFilesDir" Val="$PPRDIR/../../VivadoProjects/optimsoc_4_Cores/optimsoc4_div_perf_counter2/synth-vivado/optimsoc_examples_compute_tile_nexys4ddr_0.ip_user_files"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
