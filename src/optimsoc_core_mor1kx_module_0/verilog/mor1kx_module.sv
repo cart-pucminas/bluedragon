@@ -33,6 +33,7 @@ module mor1kx_module
     parameter CPU_IMPLEMENTATION = "CAPPUCCINO",
     parameter FEATURE_FPU = "NONE", // NONE | ENABLED
     parameter FEATURE_DEBUGUNIT = "NONE", // NONE | ENABLED
+    parameter FEATURE_BRANCH_PREDICTOR = "SIMPLE",
     parameter FEATURE_PERFCOUNTERS = "NONE" // NONE | ENABLED
     )
    (input         clk_i,
@@ -121,7 +122,8 @@ module mor1kx_module
        .FEATURE_PERFCOUNTERS            (FEATURE_PERFCOUNTERS),
        .OPTION_PERFCOUNTERS_NUM         (2),
        .FEATURE_DEBUGUNIT               (FEATURE_DEBUGUNIT),
-       .FEATURE_TRACEPORT_EXEC          ("ENABLED"))
+       .FEATURE_TRACEPORT_EXEC          ("ENABLED"),
+       .FEATURE_BRANCH_PREDICTOR        (FEATURE_BRANCH_PREDICTOR))
      u_cpu(/*AUTOINST*/
            // Outputs
            .iwbm_adr_o                  (iwb_adr_o[31:0]),
