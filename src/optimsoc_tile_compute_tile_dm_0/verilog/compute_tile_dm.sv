@@ -265,7 +265,7 @@ module compute_tile_dm
    localparam MOR1KX_FEATURE_BRANCH_PREDICTOR = "SIMPLE";
    localparam CORE0_FEATURE_BRANCH_PREDICTOR = "SIMPLE";
    localparam MOR1KX_OPTION_ICACHE_WAYS = 2;
-   localparam CORE0_OPTION_ICACHE_WAYS = 2;
+   localparam CORE0_OPTION_ICACHE_WAYS = 4;
    localparam MOR1KX_OPTION_ICACHE_SET_WIDTH = 8;
    localparam CORE0_OPTION_ICACHE_SET_WIDTH = 4;
 
