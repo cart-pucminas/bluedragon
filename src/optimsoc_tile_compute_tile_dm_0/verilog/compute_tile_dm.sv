@@ -265,9 +265,9 @@ module compute_tile_dm
    localparam MOR1KX_FEATURE_BRANCH_PREDICTOR = "SIMPLE";
    localparam CORE0_FEATURE_BRANCH_PREDICTOR = "SIMPLE";
    localparam MOR1KX_OPTION_ICACHE_WAYS = 2;
-   localparam CORE0_OPTION_ICACHE_WAYS = 2;
+   localparam CORE0_OPTION_ICACHE_WAYS = 16;
    localparam MOR1KX_OPTION_ICACHE_SET_WIDTH = 8;
-   localparam CORE0_OPTION_ICACHE_SET_WIDTH = 4;
+   localparam CORE0_OPTION_ICACHE_SET_WIDTH = 1;
 
    generate
       for (c = 0; c < CONFIG.CORES_PER_TILE; c = c + 1) begin : gen_cores
