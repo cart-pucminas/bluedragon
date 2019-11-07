@@ -3,9 +3,13 @@
   Open Hardware Description License, v. 1.0. If a copy
   of the OHDL was not distributed with this file, You
   can obtain one at http://juliusbaxter.net/ohdl/ohdl.txt
+
   Description: mor1kx Perfomance Counters Unit
+
   Copyright (C) 2016 Authors
+
   Author(s): Alexey Baturo <baturo.alexey@gmail.com>
+
 ***************************************************************************** */
 
 `include "mor1kx-defines.v"
@@ -123,8 +127,8 @@ module mor1kx_pcu
                   pcu_events_hit[`OR1K_PCMR_DCM] +
                   pcu_events_hit[`OR1K_PCMR_ICM] +
                   pcu_events_hit[`OR1K_PCMR_IFS] +
+                  pcu_events_hit[`OR1K_PCMR_LSUS] +
                   pcu_events_hit[`OR1K_PCMR_BS] +
-                  pcu_events_hit[`OR1K_PCMR_LSUS] +                  
                   pcu_events_hit[`OR1K_PCMR_DTLBM] +
                   pcu_events_hit[`OR1K_PCMR_ITLBM] +
                   pcu_events_hit[`OR1K_PCMR_DDS];
