@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1572428540">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1573133838">
   <File Type="VDS-TIMINGSUMMARY" Name="compute_tile_dm_nexys4_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="compute_tile_dm_nexys4.dcp"/>
   <File Type="RDS-UTIL-PB" Name="compute_tile_dm_nexys4_utilization_synth.pb"/>

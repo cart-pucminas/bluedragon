@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -185,8 +186,8 @@ read_verilog -library xil_defaultlib {
   /media/lucas/LINUXPROG/bluedragon/src/glip_backend_uart_0/verilog/glip_uart_transmit.v
 }
 read_ip -quiet /media/lucas/LINUXPROG/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series.xci
-set_property used_in_implementation false [get_files -all /media/lucas/LINUXPROG/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series/user_design/constraints/mig_7series_ooc.xdc]
 set_property used_in_implementation false [get_files -all /media/lucas/LINUXPROG/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series/user_design/constraints/mig_7series.xdc]
+set_property used_in_implementation false [get_files -all /media/lucas/LINUXPROG/bluedragon/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series/user_design/constraints/mig_7series_ooc.xdc]
 
 read_ip -quiet /media/lucas/LINUXPROG/bluedragon/src/wallento_boards_nexys4ddr-clk_ddr_0/ip/clk_gen_ddr/clk_gen_ddr.xci
 set_property used_in_implementation false [get_files -all /media/lucas/LINUXPROG/bluedragon/src/wallento_boards_nexys4ddr-clk_ddr_0/ip/clk_gen_ddr/clk_gen_ddr_board.xdc]

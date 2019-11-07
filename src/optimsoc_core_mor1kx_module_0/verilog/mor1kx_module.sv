@@ -34,6 +34,8 @@ module mor1kx_module
     parameter FEATURE_FPU = "NONE", // NONE | ENABLED
     parameter FEATURE_DEBUGUNIT = "NONE", // NONE | ENABLED
     parameter FEATURE_BRANCH_PREDICTOR = "SIMPLE",
+    parameter OPTION_ICACHE_WAYS = 2,
+    parameter OPTION_ICACHE_SET_WIDTH = 8,
     parameter FEATURE_PERFCOUNTERS = "NONE" // NONE | ENABLED
     )
    (input         clk_i,
@@ -102,8 +104,8 @@ module mor1kx_module
        .OPTION_RF_NUM_SHADOW_GPR        (1),
 
        .FEATURE_INSTRUCTIONCACHE        ("ENABLED"),
-       .OPTION_ICACHE_WAYS              (2),
-       .OPTION_ICACHE_SET_WIDTH         (8),
+       .OPTION_ICACHE_WAYS              (OPTION_ICACHE_WAYS),
+       .OPTION_ICACHE_SET_WIDTH         (OPTION_ICACHE_SET_WIDTH),
 
        .IBUS_WB_TYPE                    ("B3_REGISTERED_FEEDBACK"),
        .FEATURE_IMMU                    ("ENABLED"),

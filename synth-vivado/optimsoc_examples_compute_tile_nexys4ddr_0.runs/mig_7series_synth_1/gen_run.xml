@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="mig_7series_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1572251205">
-  <File Type="RDS-RDS" Name="mig_7series.vds"/>
+<GenRun Id="mig_7series_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1572524833">
   <File Type="PA-TCL" Name="mig_7series.tcl"/>
-  <File Type="RDS-DCP" Name="mig_7series.dcp"/>
   <File Type="REPORTS-TCL" Name="mig_7series_reports.tcl"/>
-  <File Type="RDS-UTIL-PB" Name="mig_7series_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="mig_7series_utilization_synth.rpt"/>
+  <File Type="RDS-RDS" Name="mig_7series.vds"/>
+  <File Type="RDS-DCP" Name="mig_7series.dcp"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mig_7series">
     <File Path="$PPRDIR/../src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series.xci">
       <FileInfo>

@@ -263,7 +263,11 @@ module compute_tile_dm
    localparam MOR1KX_FEATURE_PERFCOUNTERS = (CONFIG.CORE_ENABLE_PERFCOUNTERS ? "ENABLED" : "NONE");
    localparam MOR1KX_FEATURE_DEBUGUNIT = "NONE"; // XXX: Enable debug unit with OSD CDM module (once it's ready)
    localparam MOR1KX_FEATURE_BRANCH_PREDICTOR = "SIMPLE";
-   localparam CORE0_FEATURE_BRANCH_PREDICTOR = "SAT_COUNTER";
+   localparam CORE0_FEATURE_BRANCH_PREDICTOR = "SIMPLE";
+   localparam MOR1KX_OPTION_ICACHE_WAYS = 2;
+   localparam CORE0_OPTION_ICACHE_WAYS = 2;
+   localparam MOR1KX_OPTION_ICACHE_SET_WIDTH = 8;
+   localparam CORE0_OPTION_ICACHE_SET_WIDTH = 4;
 
    generate
       for (c = 0; c < CONFIG.CORES_PER_TILE; c = c + 1) begin : gen_cores
@@ -292,6 +296,8 @@ module compute_tile_dm
                  .FEATURE_FPU(MOR1KX_FEATURE_FPU),
                  .FEATURE_PERFCOUNTERS(MOR1KX_FEATURE_PERFCOUNTERS),
                  .FEATURE_BRANCH_PREDICTOR(c == 0 ? CORE0_FEATURE_BRANCH_PREDICTOR : MOR1KX_FEATURE_BRANCH_PREDICTOR),
+                 .OPTION_ICACHE_WAYS(c == 0 ? CORE0_OPTION_ICACHE_WAYS : MOR1KX_OPTION_ICACHE_WAYS),
+                 .OPTION_ICACHE_SET_WIDTH(c == 0 ? CORE0_OPTION_ICACHE_SET_WIDTH : MOR1KX_OPTION_ICACHE_SET_WIDTH),
                  .FEATURE_DEBUGUNIT(MOR1KX_FEATURE_DEBUGUNIT))
          u_core (
                  /*AUTOINST*/

@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Mon Oct 28 09:29:29 2019
+// Date        : Mon Oct 28 09:29:25 2019
 // Host        : lucas-VirtualBox running 64-bit Ubuntu 16.04.6 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/lucas/build/optimsoc_examples_compute_tile_nexys4ddr_0/src/wallento_boards_nexys4ddr-ddr_0/ip/mig_7series/mig_7series_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top mig_7series -prefix
+//               mig_7series_ mig_7series_stub.v
 // Design      : mig_7series
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1

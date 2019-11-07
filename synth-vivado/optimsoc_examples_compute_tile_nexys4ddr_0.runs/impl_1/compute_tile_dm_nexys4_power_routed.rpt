@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Wed Oct 30 10:56:56 2019
+| Date             : Thu Nov  7 14:52:46 2019
 | Host             : lucas-Inspiron-5480 running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file compute_tile_dm_nexys4_power_routed.rpt -pb compute_tile_dm_nexys4_power_summary_routed.pb -rpx compute_tile_dm_nexys4_power_routed.rpx
 | Design           : compute_tile_dm_nexys4
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.277        |
+| Total On-Chip Power (W)  | 1.269        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.164        |
-| Device Static (W)        | 0.114        |
+| Dynamic (W)              | 1.156        |
+| Device Static (W)        | 0.113        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 79.2         |
 | Junction Temperature (C) | 30.8         |
@@ -53,23 +53,23 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.055 |       44 |       --- |             --- |
-| Slice Logic              |     0.042 |   109425 |       --- |             --- |
-|   LUT as Logic           |     0.038 |    40674 |     63400 |           64.15 |
-|   Register               |     0.002 |    55368 |    126800 |           43.67 |
+| Slice Logic              |     0.041 |   109623 |       --- |             --- |
+|   LUT as Logic           |     0.037 |    40745 |     63400 |           64.27 |
+|   Register               |     0.002 |    55421 |    126800 |           43.71 |
 |   CARRY4                 |     0.001 |     1126 |     15850 |            7.10 |
-|   F7/F8 Muxes            |    <0.001 |     6304 |     63400 |            9.94 |
-|   LUT as Distributed RAM |    <0.001 |      596 |     19000 |            3.14 |
+|   F7/F8 Muxes            |    <0.001 |     6273 |     63400 |            9.89 |
+|   LUT as Distributed RAM |    <0.001 |      632 |     19000 |            3.33 |
 |   LUT as Shift Register  |    <0.001 |      380 |     19000 |            2.00 |
-|   Others                 |    <0.001 |      789 |       --- |             --- |
-| Signals                  |     0.125 |    85698 |       --- |             --- |
-| Block RAM                |     0.045 |       96 |       135 |           71.11 |
+|   Others                 |    <0.001 |      785 |       --- |             --- |
+| Signals                  |     0.123 |    85850 |       --- |             --- |
+| Block RAM                |     0.041 |       92 |       135 |           68.15 |
 | MMCM                     |     0.222 |        2 |         6 |           33.33 |
 | PLL                      |     0.090 |        1 |         6 |           16.67 |
-| DSPs                     |     0.006 |       12 |       240 |            5.00 |
+| DSPs                     |     0.005 |       12 |       240 |            5.00 |
 | I/O                      |     0.509 |       52 |       210 |           24.76 |
 | PHASER                   |     0.070 |       14 |       --- |             --- |
-| Static Power             |     0.114 |          |           |                 |
-| Total                    |     1.277 |          |           |                 |
+| Static Power             |     0.113 |          |           |                 |
+| Total                    |     1.269 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.314 |       0.293 |      0.021 |
+| Vccint    |       1.000 |     0.306 |       0.285 |      0.021 |
 | Vccaux    |       1.800 |     0.269 |       0.250 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -88,7 +88,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.005 |       0.003 |      0.003 |
+| Vccbram   |       1.000 |     0.005 |       0.002 |      0.003 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -189,37 +189,37 @@ Table of Contents
 +-----------------------------------------+-----------+
 | Name                                    | Power (W) |
 +-----------------------------------------+-----------+
-| compute_tile_dm_nexys4                  |     1.164 |
+| compute_tile_dm_nexys4                  |     1.156 |
 |   u_board                               |     0.907 |
 |     u_clk_gen_ddr                       |     0.107 |
 |       inst                              |     0.107 |
-|     u_mig_7series                       |     0.799 |
-|       u_mig_7series_mig                 |     0.799 |
-|   u_compute_tile                        |     0.244 |
-|     gen_cores[0].gen_ctm_stm.u_ctm      |     0.003 |
-|       u_ctm                             |     0.003 |
+|     u_mig_7series                       |     0.800 |
+|       u_mig_7series_mig                 |     0.800 |
+|   u_compute_tile                        |     0.235 |
+|     gen_cores[0].gen_ctm_stm.u_ctm      |     0.004 |
+|       u_ctm                             |     0.004 |
 |     gen_cores[0].gen_ctm_stm.u_stm      |     0.004 |
 |       u_stm                             |     0.004 |
-|     gen_cores[0].u_core                 |     0.051 |
-|       u_cpu                             |     0.051 |
+|     gen_cores[0].u_core                 |     0.044 |
+|       u_cpu                             |     0.044 |
 |     gen_cores[1].gen_ctm_stm.u_ctm      |     0.004 |
 |       u_ctm                             |     0.004 |
 |     gen_cores[1].gen_ctm_stm.u_stm      |     0.004 |
 |       u_stm                             |     0.004 |
-|     gen_cores[1].u_core                 |     0.053 |
-|       u_cpu                             |     0.053 |
+|     gen_cores[1].u_core                 |     0.051 |
+|       u_cpu                             |     0.051 |
 |     gen_cores[2].gen_ctm_stm.u_ctm      |     0.004 |
 |       u_ctm                             |     0.004 |
 |     gen_cores[2].gen_ctm_stm.u_stm      |     0.004 |
 |       u_stm                             |     0.004 |
-|     gen_cores[2].u_core                 |     0.050 |
-|       u_cpu                             |     0.050 |
-|     gen_cores[3].gen_ctm_stm.u_ctm      |     0.003 |
-|       u_ctm                             |     0.003 |
+|     gen_cores[2].u_core                 |     0.052 |
+|       u_cpu                             |     0.052 |
+|     gen_cores[3].gen_ctm_stm.u_ctm      |     0.004 |
+|       u_ctm                             |     0.004 |
 |     gen_cores[3].gen_ctm_stm.u_stm      |     0.004 |
 |       u_stm                             |     0.004 |
-|     gen_cores[3].u_core                 |     0.052 |
-|       u_cpu                             |     0.052 |
+|     gen_cores[3].u_core                 |     0.047 |
+|       u_cpu                             |     0.047 |
 |     gen_debug_ring.u_debug_ring_segment |     0.003 |
 |     gen_mam_dm_wb.u_mam_dm_wb           |     0.001 |
 |     u_bus                               |     0.003 |
